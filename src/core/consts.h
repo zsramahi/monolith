@@ -1,0 +1,24 @@
+#ifndef MONOLITH_CONSTS_H
+#define MONOLITH_CONSTS_H
+
+#include <stdint.h>
+
+#define MONOLITH_ROUNDS   12
+#define MONOLITH_LANES    16
+#define MONOLITH_RATELANES 8
+#define MONOLITH_RATEBYTES 64
+#define MONOLITH_KEYBYTES  32
+#define MONOLITH_NONCEBYTES 16
+#define MONOLITH_TAGBYTES  16
+
+#define MONOLITH_R0 27
+#define MONOLITH_R1 39
+#define MONOLITH_R2 53
+#define MONOLITH_R3 19
+
+extern const uint64_t MONOLITH_RC[MONOLITH_ROUNDS];
+extern const uint64_t MONOLITH_IV[4];
+
+#define MONOLITH_DOMAIN_TAG  0x01ULL
+
+#endif
